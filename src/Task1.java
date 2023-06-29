@@ -19,11 +19,6 @@ public class Task1 {
         public String companyName;
     }
 
-    private ExecutorService executorService;
-
-    public void ProfileService() {
-        executorService = Executors.newFixedThreadPool(4);
-    }
     public static void main(String[] args) {
         ProfileInfo profileInfo = getProfileInfo(1L);
         System.out.println(profileInfo.userInfo.name);

@@ -37,12 +37,7 @@ public class Task2 {
 
         Map<Long, Map<Long, List<Profile>>> tmp = groupByOrgIdAndGroupId(arrayList);
         System.out.println(tmp);
-//        for (Long orgKey: tmp.keySet()) {
-//            System.out.print(orgKey + ": \n");
-//            for (Long groupKey: tmp.get(orgKey).keySet()) {
-//                System.out.println(tmp.get(orgKey).get(groupKey));
-//            }
-//        }
+
     }
 
     public static Map<Long, Map<Long, List<Profile>>> groupByOrgIdAndGroupId(List<Profile> data) {
